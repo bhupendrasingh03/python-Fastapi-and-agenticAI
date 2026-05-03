@@ -1,0 +1,51 @@
+and
+Similar to or, and can be used within conditional statements.
+Execute in the terminal window code grade.py. Start your new program as follows:
+
+score = int(input("Score: "))
+
+if score >= 90 and score <= 100:
+    print("Grade: A")
+elif score >=80 and score < 90:
+    print("Grade: B")
+elif score >=70 and score < 80:
+    print("Grade: C")
+elif score >=60 and score < 70:
+    print("Grade: D")
+else:
+    print("Grade: F")
+Notice that by executing python grade.py, you will be able to input a score and get a grade. However, notice how there is potential for bugs.
+
+Typically, we do not want to ever trust our users to input the correct information. We could improve our code as follows:
+
+score = int(input("Score: "))
+if 90 <= score <= 100:
+      print("Grade: A")
+  elif 80 <= score < 90:
+      print("Grade: B")
+  elif 70 <= score < 80:
+      print("Grade: C")
+  elif 60 <= score < 70:
+      print("Grade: D")
+  else:
+      print("Grade: F")
+    
+Notice how Python allows you to chain together the operators and conditions in a way quite uncommon to other programming languages.
+
+
+Still, we can further improve our program:
+
+score = int(input("Score: "))
+
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+elif score >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+    

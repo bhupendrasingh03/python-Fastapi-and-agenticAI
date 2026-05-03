@@ -1,0 +1,85 @@
+# Conditionals
+Conditionals allow you, the programmer, to allow your program to make decisions: As if your program has the choice between taking the left-hand road or the right-hand road based upon certain conditions.
+Conditionals allow your program to make decisions, choosing one path over another depending on specified conditions.
+Built within Python are a set of “operators” that are used to ask mathematical questions.
+> and < symbols are probably quite familiar to you.
+>= denotes “greater than or equal to.”
+<= denotes “less than or equal to.”
+== denotes “equals.” Note the double equal sign: a single equal sign assigns a value, whereas two equal signs compare values.
+!= denotes “not equal to.”
+Conditional statements compare a left-hand term to a right-hand term.
+
+
+# If condition
+
+x = int(input("What is x? "))
+y = int(input("What is y? "))
+   
+    
+if(x < y):
+    print("x is less than y")
+if x > y:
+    print("x is greater than y")
+if x == y:
+    print("x is equal to y")
+    
+    
+# elif
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+elif x == y:
+    print("x is equals to y")
+
+
+Notice how the use of elif allows the program to make fewer decisions. First, the if statement is evaluated. If this statement is found to be true, all the elif statements will not be run at all. However, if the if statement is evaluated and found to be false, the first elif will be evaluated. If this is true, it will not run the final evaluation.
+
+# ====================== # 
+There is one final improvement we can make to our program. Notice how logically elif x == y is not a necessary evaluation to run. After all, if logically x is not less than y AND x is not greater than y, x MUST equal y. Therefore, we don’t have to run elif x == y. We can create a “catch-all,” default outcome using an else statement. We can revise as follows:
+
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+else:
+    print("x is equal to y")
+
+Notice how the relative complexity of this program has decreased through our revision.
+===== check  comparesion-relation.svg ==========
+
+
+
+
+===================== OR =================
+or allows your program to decide between one or more alternatives. For example, we could further edit our program as follows:
+
+
+if x < y or x > y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y");
+    
+Notice that the result of our program is the same, but the complexity is decreased. The efficiency of our code is increased.
+
+========== At this point, our code is pretty great. However, could the design be further improved?? we could further edit our code as follows:
+if x != y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
+
+
+
+
+For the purpose of illustration, we could also change our code as follows:
+
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+if x == y:
+    print("x is equal to y")
+else:
+    print("x is not equal to y")
