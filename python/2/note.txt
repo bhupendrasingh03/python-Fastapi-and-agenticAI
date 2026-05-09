@@ -38,3 +38,25 @@ A for loop iterates through a list of items. For example, in the text editor win
 
 for i in [0, 1, 2]:
     print("meow")
+
+
+
+
+# Dictionaries
+
+dicts or dictionaries are a data structure that allows you to associate keys with values.
+Where a list is a list of multiple values, a dict associates a key with a value.
+Considering the houses of Hogwarts, we might assign specific students to specific houses.
+https://cs50.harvard.edu/python/notes/2/cs50pWeek2Slide17.png
+
+# https://cs50.harvard.edu/python/notes/2/cs50pWeek2Slide18.png
+
+
+for eg check dict.py
+
+
+
+
+// Note 
+list are like arrays in we know in the js and other programming
+dist are like object.
