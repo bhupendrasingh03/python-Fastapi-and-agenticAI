@@ -2,6 +2,8 @@
 This Repo is all about my python-Fastapi-and-agenticAI
 
 # Python Learning Journey
+# Lear
+# Learning from  => https://cs50.harvard.edu/python/ 
 
 ## Topics Covered
 
